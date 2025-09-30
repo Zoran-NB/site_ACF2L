@@ -1,0 +1,115 @@
+ .banner-text h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+p.bebe {
+  font-size: 35px;
+
+}
+
+p.dodo {
+    font-size: 20px;
+}
+
+
+.icon-block {
+  min-width: 120px;      /* largeur minimale bloc icone + texte */
+}
+
+.icon-block img {
+  height: 100px;         /* taille icônes */
+  object-fit: contain;   /* ratio */
+}
+
+
+ul.toto {
+  list-style: none; /* enlève puces */
+  padding-left: 0;  /* enlève retrait */
+}
+
+/* ajustement plane */
+.plane-img {
+  height: 230px;
+  width: auto;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+
+.icons-container {
+    gap: 300px; 
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.custom-bg {
+    background-color: #111111; /* noir très foncé */
+}
+
+.map-container {
+  width: 100%;
+  max-width: 550px; /* limite la largeur */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px;   
+  border: 0;
+  border-radius: 8px; /* coins arrondis */
+}
+
+
+/* hauteur fixe carousels */
+.carousel-inner {
+  height: 30vh;
+}
+
+/* hauteur slide */
+.carousel-item {
+  height: 100%;
+}
+
+/* centrage vertical/horizontal */
+.carousel-item .d-flex {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* images du carousel */
+.carousel-item img {
+  width: 25%;             /* largeur fixe par image */
+  height: 75%;            /* truc verticale */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* ombre portée */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* décalage auto */
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; /* hauteur navbar */
+  margin-top: -80px; /* decale vers le bas */
+}
+
+.footer-icons img {
+  width: 50px;       /* largeur fixe */
+  height: 50px;      /* hauteur fixe */
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1); /* zoom léger au survol */
+}
+
+.footer-logo img {
+  width: 150px;      /* largeur des logos */
+  height: auto;
+  object-fit: contain;
+}
